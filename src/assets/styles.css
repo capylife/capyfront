@@ -241,6 +241,24 @@ a:hover {
 }
 
 
+.svelte-select-list {
+    background-color: var(--capyBrown) !important;
+}
+
+.svelte-select-list .active {
+    background-color: var(--capyDark) !important;
+}
+
+.svelte-select-list .hover {
+    background-color: var(--capyLight) !important;
+}
+
+.svelte-select.focused {
+    border-color: var(--capyBrown) !important;
+    border-width: 2px !important;
+}
+
+
 ::selection, ::-moz-selection {
     background-color: var(--capyLight);
     color: var(--capyBrown);
