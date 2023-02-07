@@ -42,7 +42,7 @@
         </div>
       {:else}
         <div class="capybara-display">
-          <h2 style="margin-bottom: .5em;margin-top:1em;">
+          <h3 style="margin-bottom: .5em;margin-top:1em;">
             {#if capy.days_ago == 0}
               Today's capybara
             {:else if capy.days_ago < 25}
@@ -50,13 +50,12 @@
               {capy.days_ago > 1 ? "days" : "day"} ago
             {:else}
               Capybara from {new Date(capy.used).toLocaleDateString("en-US", {
-                weekday: "long",
                 year: "numeric",
                 month: "short",
                 day: "numeric",
               })}
             {/if}
-          </h2>
+          </h3>
 
           <CapybaraCard
             editable={false}
